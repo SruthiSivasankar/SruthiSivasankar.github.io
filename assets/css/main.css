@@ -2197,6 +2197,11 @@ input, select, textarea {
 	footer.major {
 		margin: 4em 0 0 0;
 	}
+/* Tighter spacing for Work Experience points */
+#two .content p {
+	margin: 0 0 0.5em 0;   /* gap between each <p> */
+	line-height: 1.5;      /* line spacing inside each point */
+}
 
 /* Form */
 
@@ -4112,6 +4117,15 @@ input, select, textarea {
 
 
 	#dynamic-text {
+		background: linear-gradient(90deg,#00f260, #64b3f4);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	#dynamic-text2 {
 		background: linear-gradient(90deg,#00f260, #64b3f4);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;

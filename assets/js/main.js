@@ -248,19 +248,64 @@
 			._parallax();
 
 
-	// Dynamic text replacement.
-    var dynamicText = $('#dynamic-text');
-    var phrases = ["Fullstack Projects", "AI Projects", "Data Engineering", "Cloud-Native Application", "Project management and Product Design"];
-    var index = 0;
+	// Dynamic text rotator.
+	function rotateText($el, phrases, interval) {
+		var i = 0;
+		setInterval(function() {
+			$el.fadeOut(function() {
+				$el.text(phrases[i]).fadeIn();
+				i = (i + 1) % phrases.length;
+			});
+		}, interval);
+	}
 
-    function changeText() {
-        dynamicText.fadeOut(function() {
-            dynamicText.text(phrases[index]);
-            dynamicText.fadeIn();
-        });
-        index = (index + 1) % phrases.length;
-    }
+	rotateText($('#dynamic-text'), [
+		"Product Discovery",
+		"Product Design",
+		"Product Planning",
+		"AI-powered Product Development",
+		"Product monitoring",
+		"Project management"
+	], 2000);
 
-    setInterval(changeText, 2000);
+	rotateText($('#dynamic-text2'), [
+		"Full-stack Projects",
+		"AI projects",
+		"Cloud-native Application",
+		"Data Engineering",
+		"UI/UX Design"
+	], 2000);
+
+
+	// // Dynamic text replacement.
+    // var dynamicText = $('#dynamic-text');
+    // var phrases = ["Product Discovery", "Product Planning", "Product Development", "Product monitoring", "Project management and Product Design"];
+    // var index = 0;
+
+    // function changeText() {
+    //     dynamicText.fadeOut(function() {
+    //         dynamicText.text(phrases[index]);
+    //         dynamicText.fadeIn();
+    //     });
+    //     index = (index + 1) % phrases.length;
+    // }
+
+	// setInterval(changeText, 2000);
+
+
+	// // Dynamic text replacement.
+    // var dynamicText2 = $('#dynamic-text2');
+    // var phrases2 = ["Full-stack Projects", "AI projects", "Cloud-native Application", "Backend development", "Project management and Product Design"];
+    // var index = 0;
+
+    // function changeText() {
+    //     dynamicText2.fadeOut(function() {
+    //         dynamicText2.text(phrases2[index]);
+    //         dynamicText2.fadeIn();
+    //     });
+    //     index = (index + 1) % phrases.length;
+    // }
+
+    // setInterval(changeText, 2000);
 
 })(jQuery);
