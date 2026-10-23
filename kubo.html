@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>KUBO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/fevicon.png" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Sruthi Sivasankar</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li><a href="https://drive.google.com/file/d/1RsfsbwqDoRMkjbuLhPmK-c5i5zmQ-1Bb/view?usp=sharing">Resume</a></li>
+						<li><a href="#five" class="button primary">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>KUBO</h2>
+							<p>Rethinking Customer Support using our AI Avatar companion</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/KuboAdmin.png" alt="" /></a>
+										<h3>The Opportunity</h3>
+										<h4>AI Can Answer Questions. Can It Resolve Problems?</h4>
+										<p>Customer support often breaks down when the solution depends on a specific product, configuration, or technical detail. Users may know what is wrong without knowing how to describe it, while conventional support experiences require them to search documentation, navigate troubleshooting flows, or repeat information to support agents.
+											The opportunity was to move beyond conversational AI that simply responds to prompts toward context-aware assistance that helps users progress toward a resolution.</p>
+										<h4>Market signals</h4>
+										<p>Industry research reinforced the relevance of this direction. The findings suggested a product opportunity at the intersection of self-service, contextual understanding, and personalized guidance which informed the problem framing.</p>
+										<ul>
+											<li>61% of customers prefer self-service for resolving simple issues</li>
+											<li>82% of service professionals say customer expectations are higher than they used to be, based on a survey of 6,500 service professionals.</li>
+											<li>Lack of contextual knowledge was identified as a leading concern in Salesforce's research on generative AI for customer service.</li>
+											<li>Sources: <a href="https://www.salesforce.com/service/what-is-customer-service/stats/">Salesforce Customer Service Statistics</a>;  <a href="https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/white-papers/trends-in-ai-report.pdf">Salesforce AI in Customer Service</a></li>
+										</ul>
+										<h3>Problem Framing</h3>
+										<h4>Identifying the Missing Context</h4>
+										<p>Framed the problem around a gap between a user's actual situation and the information available to an AI support system</p>
+										<ul>
+											<li>User problem: When troubleshooting a product, users may struggle to identify the relevant model, explain the issue accurately, or locate the right instructions.</li>
+											<li>Existing friction: Text-based queries depend on the user's ability to describe the problem, while generic responses can miss product-specific requirements.</li>
+											<li>Opportunity hypothesis: Combining visual input, natural conversation, and product-specific documentation could reduce the effort required to obtain relevant guidance.</li>
+										</ul>
+										<h4>Jobs to Be Done</h4>
+										<p><blockquote>When I encounter a technical issue I cannot easily describe, help me show the problem and receive guidance relevant to my exact product, so I can make progress without repeatedly searching for answers.</blockquote>This reframed the experience around the user's desired outcome rather than a feature checklist.</p>
+										<h3>Product Strategy</h3>
+										<h4>Context Before Conversation</h4>
+										<p>KUBO was conceived as a customizable AI companion that combines real-time voice interaction, visual understanding, and retrieval-augmented generation.
+											The product thesis was that a more natural interface alone would not differentiate the experience. Its value would come from connecting the user's situation to the right knowledge and translating that context into actionable guidance.</p>
+										<h4>Three strategic pillars</h4>
+										<ol>
+											<li>Reduce the effort of explaining a problem : Enable users to speak naturally and show the object or situation through a camera, rather than relying exclusively on text prompts and technical terminology.</li>
+											<li>Ground responses in product-specific knowledge: Use RAG to retrieve relevant information from manuals, documentation, and other approved knowledge sources before generating a response.</li>
+											<li>Design for operational improvement: Give administrators tools to configure the assistant, maintain its knowledge base, and review interaction analytics to identify gaps in answer quality and coverage.</li>
+										</ol>
+										<p>Together, these pillars connect the end-user experience with the operational capabilities needed to maintain a useful support product.</p>
+								<h3>Prioritization</h3>
+								<h4>Optimize for Resolution, Not Novelty</h4>
+								<p>In a hackathon setting, building every possible AI capability would have diluted the core proposition. Prioritized the product roadmap around the riskiest assumptions: whether KUBO can understand the user's context, retrieve relevant evidence, and deliver guidance quickly enough to be useful.</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Priority</th>
+												<th>Capability</th>
+												<th>Product rationale</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>P0</td>
+												<td>Knowledge-grounded answers</td>
+												<td>Establish relevance and reduce unsupported responses</td>
+											</tr>
+											<tr>
+												<td>P0</td>
+												<td>Voice interaction</td>
+												<td>Reduce the effort of describing problems</td>
+											</tr>
+											<tr>
+												<td>P0</td>
+												<td>Visual context</td>
+												<td>Help identify products and visible issues</td>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>Admin knowledge management</td>
+												<td>Keep support content maintainable and current</td>
+											</tr>
+											<tr>
+												<td>P1</td>
+												<td>Interaction analytics</td>
+												<td>Surface retrieval gaps and recurring failure patterns</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>Emotion-aware responses</td>
+												<td>Explore adaptive assistance after core reliability is established</td>
+											</tr>
+											<tr>
+												<td>P2</td>
+												<td>Custom avatars and multilingual voices</td>
+												<td>Expand personalization and accessibility</td>
+											</tr>
+										</tbody>
+									</table>
+									<h3>Product Experience & System Design</h3>
+									<p>KUBO connected two complementary product experiences. The product's differentiator was not any single model. It was the orchestration of these capabilities into one coherent support experience.</p>
+									<h4>User experience</h4>
+									<ul>
+										<li>Real-time conversational support through voice and camera input</li>
+										<li>Visual recognition to help interpret the user's context</li>
+										<li>Retrieval-grounded responses informed by a centralized knowledge base</li>
+										<li>An interactive 3D avatar for a more natural assistance experience</li>
+									</ul>
+									<h4>Administrator experience</h4>
+									<ul>
+										<li>Configurable assistant personality and model settings</li>
+										<li>Centralized management of manuals, documents, and other knowledge sources</li>
+										<li>Interaction analytics to review usage, feedback, and potential quality issues</li>
+									</ul>
+									<h4>From user input to contextual guidance</h4>
+										<ol>
+											<li>Capture: The user describes an issue through speech or visual input.</li>
+											<li>Interpret: Speech recognition and visual models help establish context.</li>
+											<li>Retrieve: RAG searches the knowledge base for relevant supporting information.</li>
+											<li>Respond: The language model generates a contextual response, delivered through speech and the interactive avatar.</li>
+											<li>Evaluate: Interaction data can inform future improvements to retrieval quality and support coverage.</li>
+										</ol>
+										<h3>Proposed Success Metrics</h3>
+
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Product objective</th>
+														<th>Proposed metric</th>
+														<th>What it reveals</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Improve resolution</td>
+														<td>Task resolution rate</td>
+														<td>Whether users reach a correct solution</td>
+													</tr>
+													<tr>
+														<td>Reduce user effort</td>
+														<td>Time to resolution</td>
+														<td>How quickly users complete a troubleshooting task</td>
+													</tr>
+													<tr>
+														<td>Improve answer quality</td>
+														<td>Grounded answer accuracy</td>
+														<td>Whether responses are supported by relevant documentation</td>
+													</tr>
+													<tr>
+														<td>Reduce friction</td>
+														<td>Repeat-query rate</td>
+														<td>Whether users must repeatedly clarify or rephrase</td>
+													</tr>
+													<tr>
+														<td>Build trust</td>
+														<td>CSAT after resolution</td>
+														<td>How users evaluate the completed support experience</td>
+													</tr>
+													<tr>
+														<td>Improve coverage</td>
+														<td>Successful retrieval rate</td>
+														<td>Whether relevant documentation can be found for supported issues</td>
+													</tr>
+												</tbody>
+											</table>
+								</div>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Highlights</h3>
+											<div class="row">
+												<div class="col-12 col-12-xsmall">
+													<ul class="alt">
+														<li>Recognition: 3rd Place, Red Hat × Intel AI Hackathon</li>
+														<li>Role: Product Concept, Develop Product pitch, AI integration & Cross-Functional Development</li>
+														<li>Focus: Context-aware support, knowledge retrieval, and real-time AI interaction</li>
+													</ul>
+												</div>
+											</div>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://youtu.be/QoUwZbzx3Z8?si=UnDMH3HinJAdnYAe" class="button">Demo</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/lipsync.png" alt="" /></a>
+											<h3>Development Insight</h3>
+											<p>Built using a React and Three.js frontend with a Node.js/Express backend, the project combines conversational AI, real-time speech processing, and computer vision to create an interactive AI support avatar. The LLM workflows is integrated using LangChain, LlamaIndex, RAG pipelines, and OpenVINO-powered model serving for Whisper CPP speech-to-text, Melo text-to-speech, YOLO object recognition, and custom lip-sync processing using rhubarb library. The system also used MongoDB for contextual memory and vector storage, enabling personalized and context-aware interactions in real time. </p>
+												A central challenge was coordinating multiple open-source models while maintaining a responsive, real-time interaction.
+
+												<p>We explored model optimization (Quantization / INT 8 optimization) and custom inference implementations to address latency and integration bottlenecks. These constraints shaped an important product trade-off: adding more sophisticated capabilities is only valuable when the end-to-end experience remains usable. </p>
+												
+												<p>For an AI support product, performance, answer relevance, and consistency are not merely engineering concerns. They directly affect whether users can complete the task they came to accomplish.</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://github.com/SruthiSivasankar/Kubo" class="button">Code</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container">
+					<header>
+						<h2>Want to work together?</h2>
+						<p>Feel free send me an Email or connect with me through my socials listed below!</p>
+					</header>
+					<form method="post" action="#" class="cta">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-12 col-12-xsmall">
+								<a href="mailto:sruthi19sivasankar@gmail.com" class="button primary fit">
+									Send an E-mail
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="mailto:sruthi19sivasankar@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/sruthi-sivasankar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/SruthiSivasankar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>						
+				<li><a href="https://www.instagram.com/sivasankarsruthi/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/people/Sruthi-Sivasankar/pfbid02rxe1ZYg4AtsmFu3Yis25TQdk9XGXJfUduMEPqVKYCAupoUL7vH7SUbbaXLgLArxVl/?mibextid=wwXIfr&rdid=YwH0n4uRofsdsWrw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18RRMewveN%2F%3Fmibextid%3DwwXIfr" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; SruthiSivasankar. All rights reserved.</li><li>Design: <a href="">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
