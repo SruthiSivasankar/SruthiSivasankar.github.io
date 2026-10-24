@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ComiCraftAI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/fevicon.png" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Sruthi Sivasankar</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li><a href="https://drive.google.com/file/d/1RsfsbwqDoRMkjbuLhPmK-c5i5zmQ-1Bb/view?usp=sharing">Resume</a></li>
+						<li><a href="#five" class="button primary">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>ComiCraftAI</h2>
+							<p>AI-Powered Comic Generation Canva App</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/Comicraftpage.png" alt="" /></a>
+										<h3>The Product Thesis </h3>
+										<h4>Make Visual Storytelling Independent</h4>
+										<p>Storytelling has always evolved alongside the tools available to create it, from ancient cave paintings, carvings to illustrated books and digital comics. Yet turning an idea into a finished comic still requires coordinating writing, illustration, character design, panel composition, and publishing. 
+                                            Generative AI could remove some of those barriers and bridge the gap to make story telling accessible to all.</p>
+										<h4>Market Context</h4>
+										<p>The Creator Economy Meets AI: The opportunity sat at the intersection of accessible design software, AI-assisted creation, and digital storytelling. At the time of the hackathon, Canva reported a potential reach of 185 million monthly active users through its developer ecosystem which established the scale of the platform opportunity.</p>
+                                        <p>The strategic implication was important: rather than building another standalone AI image generator, ComiCraftAI could extend an existing design ecosystem with a more specialized creation workflow.</p>
+										<h4>Product opportunity</h4>
+                                        <ul>
+											<li>Audience: Aspiring storytellers, comic enthusiasts, independent creators, and people without professional illustration skills.</li>
+											<li>Core job: Translate a written idea into a coherent, multi-panel visual narrative.</li>
+											<li>Primary friction: The gap between generating individual images and assembling a consistent story.</li>
+											<li>Potential distribution advantage: Integrating the workflow into Canva, where users could continue editing and preparing their creative work for publication.</li>
+										</ul>
+                                        <h4>Differentiation: Consistency as a Core Product Capability</h4>
+                                        <p>ComiCraftAI's key product challenge was not image generation alone. It was maintaining narrative continuity across a sequence of images. A character who looks different in every panel interrupts the reader's experience, even when each individual image looks impressive. In a multi-panel story, consistency is part of the content's usability.</p>
+                                        <p> In 2024, text-to-image models could create compelling illustrations, yet maintaining a character's identity, appearance, and artistic style across multiple scenes remained a significant challenge. Research published at the 2024 International Conference on Agents and Artificial Intelligence explored multi-stage techniques for generating consistent character artwork, underscoring the technical difficulty of this problem. <a href="https://www.scitepress.org/PublishedPapers/2024/123176/">(Research)</a> </p>
+                                        <p>This shaped the product thesis behind ComiCraftAI: The opportunity wasn't just to generate comic panels. It was to give people a repeatable way to turn a story into a visually coherent, shareable creative work without needing to coordinate multiple specialized tools or depend on a professional illustrator.</p>
+										<h3>Product Quality Management</h3>
+										<h4>The Challenge: When Every Output Is Different, What Does “Done” Mean?</h4>
+										<p>Traditional software products can often be validated against a predictable expected result. Non-deterministic nature of Generative AI products introduce a different challenge: the same input can produce different outputs, and an output that looks impressive may still fail the user's actual task.</p>
+                                        <p>For ComiCraftAI, a comic-generation app built around GPT, Stable Diffusion XL, and LoRA-based character consistency, quality was multidimensional. A successful coherent generation could still require so many corrections that creating the comic manually would have been easier.</p>
+                                        <p><blockquote>The product management challenge was to define quality beyond visual appeal and create a framework for evaluating whether the output was genuinely usable. Approach to quality management was by connecting output evaluation to release decisions, generation costs, and the economics of delivering a usable creative product.</blockquote></p>
+										
+										<h4>Quality Model</h4>
+										<div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Quality dimension</th>
+                                                        <th>What to evaluate</th>
+                                                        <th>Example failure</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Character consistency</td>
+                                                        <td>Identity, facial features, clothing, and recognizable attributes across panels</td>
+                                                        <td>The protagonist's appearance changes between scenes</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Narrative fidelity</td>
+                                                        <td>Alignment between the original story and generated panels</td>
+                                                        <td>An important event is omitted</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Visual coherence</td>
+                                                        <td>Scene composition, continuity, and readability</td>
+                                                        <td>A character's action conflicts with the surrounding scene</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Text quality</td>
+                                                        <td>Dialogue accuracy, speaker attribution, and caption placement</td>
+                                                        <td>Dialogue is assigned to the wrong character</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Workflow usability</td>
+                                                        <td>Ability to edit, regenerate, and assemble the final comic</td>
+                                                        <td>Fixing one panel forces the creator to regenerate accepted work</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+										<h4>The Quality Scorecard : Proposed evaluation model</h4>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Dimension</th>
+												<th>Weight</th>
+												<th>Evaluation method</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Character consistency</td>
+												<td>30%</td>
+												<td>Compare defining character attributes across panels</td>
+											</tr>
+											<tr>
+												<td>Narrative fidelity</td>
+												<td>25%</td>
+												<td>Review scene logic, composition, and readability</td>
+											</tr>
+											<tr>
+												<td>Visual coherence</td>
+												<td>20%</td>
+												<td>Help identify products and visible issues</td>
+											</tr>
+											<tr>
+												<td>Text quality</td>
+												<td>15%</td>
+												<td>Check dialogue, captions, and speaker attribution</td>
+											</tr>
+											<tr>
+												<td>Workflow usability</td>
+												<td>10%</td>
+												<td>Evaluate editing and correction effort</td>
+											</tr>
+										</tbody>
+									</table>
+                                    <p>Evaluated each generated comic against a predefined rubric using a representative set of stories, characters, and scene types.
+                                        Each dimension was scored on a five-point scale, with anchored definitions ranging from unusable to publication-ready. The weighted score helped compare versions.</p>
+									<h4>Quality gates</h4>
+                                    <p>Paired the scorecard with explicit acceptance criteria. Minimum overall quality score prevents an improvement in visual polish from masking a regression in narrative fidelity or character consistency.</p>
+									<ul>
+										<li>Critical defects: The output is unusable or materially changes the intended story.</li>
+										<li>Major defects: The comic remains understandable but requires significant correction.</li>
+										<li>Minor defects: Small visual or formatting issues that do not prevent use.</li>
+										
+									</ul>
+									<h4>Defect Management: Turning Failures Into Product Decisions</h4>
+
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Defect category</th>
+														<th>Potential cause</th>
+														<th>Product response</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Character drift</td>
+														<td>Inadequate character conditioning or inconsistent prompts</td>
+														<td>LoRA configuration and character references</td>
+													</tr>
+													<tr>
+														<td>Story deviation</td>
+														<td>Incomplete or inaccurate panel descriptions</td>
+														<td>Refine narrative decomposition and prompt constraints</td>
+													</tr>
+													<tr>
+														<td>Comic style mismatch & Poor composition</td>
+														<td>Weak scene instructions or layout limitations</td>
+														<td>Introduce panel-level controls and Improve generation prompts, Engineer negative prompts</td>
+													</tr>
+													<tr>
+														<td>Dialogue errors</td>
+														<td>Mismatched text generation or placement</td>
+														<td>Separate dialogue validation and editing feature</td>
+													</tr>
+													<tr>
+														<td>Unwanted or Unsafe content</td>
+														<td>Inadequate content filtering or unsafe prompts</td>
+														<td>Strengthen safeguards and provide safe regeneration</td>
+													</tr>
+													<tr>
+														<td>Excessive correction</td>
+														<td>Limited editing controls</td>
+														<td>Introduce targeted panel regeneration</td>
+													</tr>
+												</tbody>
+											</table>
+                                            <h4>Model Evaluation</h4>
+                                            <ul>
+                                                <li>Evals: Define measurable acceptance criteria and test for regressions before release. Automated checks to flag structural errors, rubric-based AI evaluation and human review would assess more subjective qualities. </li>
+                                                <li>Hallucination management: Identify when creative generation violates the user's intent, rather than assuming every novel detail is wrong. The evaluation criteria distinguished acceptable creative interpretation from changes that compromise narrative intent. Failures was categorized by severity and used to refine prompts.</li>
+                                                <li>A/B testing: Validate product changes using offline evaluations for comparisons. Guardrail metrics were added to ensure that improvements in completion do not come at the expense of visual quality, latency, or cost.</li>
+                                                <li>Established a baseline, test changes against the same evaluation set, investigate regressions, and monitor emerging failure patterns.</li>
+                                            </ul>
+                                            <h4>Product Evaluation : Proposed quality KPIs</h4>
+                                            <div class="table-wrapper">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>KPI</th>
+                                                            <th>Initial target to test</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Character consistency pass rate</td>
+                                                            <td>≥80%</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>First-pass usable-comic rate</td>
+                                                            <td>≥60%</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Critical-defect rate</td>
+                                                            <td>0 in the release acceptance set</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Successful targeted panel edits</td>
+                                                            <td>≥80%</td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Median time to an accepted comic</td>
+                                                            <td>Baseline - 25%</td>
+                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Excessive correction</td>
+                                                            <td>Limited editing controls</td>
+                                                            
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            
+								</div>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Highlights</h3>
+											<div class="row">
+												<div class="col-12 col-12-xsmall">
+													<ul class="alt">
+														<li>Role: Product Quality Management, AI Evaluation, AI safety, Unit Economics, LoRA Model training & Frontent UI Development</li>
+														<li>Focus: Character & Style consistency, Platform Ecosystems, Integration to Canva SDK, Narrative & Composition control, </li>
+													</ul>
+												</div>
+											</div>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://youtu.be/6EtMhHJsO-M?si=wX-XoU5Vff5yXv6i" class="button">Demo</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+                                            <a href="#" class="image fit"><img src="images/canvacode.png" alt="" /></a>
+                                            <h3>Development Insight & Product Architecture</h3>
+                                            <p> One Workflow, Multiple AI Capabilities: ComiCraftAI combined several specialized components behind a relatively simple creation experience.</p>
+                                            <ul>
+                                                <li>Input: A written story, selected comic style, character configuration, and desired panel count.</li>
+                                                <li>Orchestration: OpenAI's GPT generated the narrative structure, including panel descriptions, dialogue, and captions.</li>
+                                                <li>Generation: Stable Diffusion XL produced the illustrations, with LoRA-based models supporting character consistency.</li>
+                                                <li>Experience: A React and TypeScript frontend connected to a Node.js and Express backend, with Canva's Apps SDK providing the integration layer to it's design environment.</li>
+                                            </ul>
+				
+											
+
+												<p>The integration introduced a platform product consideration: ComiCraftAI was not simply an independent application. It was an experience operating within another product's ecosystem.
+                                                    That meant the product had to consider the boundary between its own capabilities and the platform's capabilities.</p>
+                                                    <ul>
+                                                        <li>ComiCraftAI's responsibility: Generate the narrative and visual assets, manage character configurations, and support the comic-creation workflow. </li>
+                                                        <li>The platform's role: Provide the surrounding design environment in which creators could continue working with their content.</li>
+                                                    </ul>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://github.com/SruthiSivasankar/comicraftai" class="button">Code</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container">
+					<header>
+						<h2>Want to work together?</h2>
+						<p>Feel free send me an Email or connect with me through my socials listed below!</p>
+					</header>
+					<form method="post" action="#" class="cta">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-12 col-12-xsmall">
+								<a href="mailto:sruthi19sivasankar@gmail.com" class="button primary fit">
+									Send an E-mail
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="mailto:sruthi19sivasankar@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/sruthi-sivasankar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/SruthiSivasankar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>						
+				<li><a href="https://www.instagram.com/sivasankarsruthi/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/people/Sruthi-Sivasankar/pfbid02rxe1ZYg4AtsmFu3Yis25TQdk9XGXJfUduMEPqVKYCAupoUL7vH7SUbbaXLgLArxVl/?mibextid=wwXIfr&rdid=YwH0n4uRofsdsWrw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18RRMewveN%2F%3Fmibextid%3DwwXIfr" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; SruthiSivasankar. All rights reserved.</li><li>Design: <a href="">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
