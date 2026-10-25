@@ -243,8 +243,59 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            
-								</div>
+                                            </div>
+                                            <h3>Unit Economics</h3>
+                                            <p>Quality has a direct economic consequence in generative AI products. Every additional generation consumes resources and  the cost of delivering one usable comic can increase substantially.  The relevant metric is therefore not just the cost of generating an image. It is the cost per accepted comic.</p>
+                                            <h4> The cost model / Main cost drivers</h4>
+                                            <ul>
+                                                <li>Narrative generation: story decomposition, panel descriptions, and dialogue.</li>
+                                                <li>Image generation: initial panel creation and subsequent regenerations.</li>
+                                                <li>Supporting infrastructure: inference, storage, and backend processing.</li>
+                                                <li>Quality recovery: additional generations needed to correct defects.</li>
+                                            </ul>
+                                            <p>A simplified model is: (Total generation and serving costs) x (Accepted comics).</p>
+                                               <p> The model exposes an important product lever: improving first-pass quality can reduce regeneration costs without reducing the number of creative options available to users.</p>
+                                            <h4>Connecting quality to margin</h4>
+                                            <p>Suppose a future paid tier charges (P) per accepted comic. A simplified model would be: 
+                                                (P) - (Variable cost per accepted comic)</p>
+                                            <p>This leads to practical product questions and proposed monetization decisions:</p>
+                                            <ul>
+                                                <li>Should users receive a limited number of included regenerations?</li>
+                                                <li>Should targeted panel editing replace full-comic regeneration?</li>
+                                                <li>Which premium capabilities are valuable enough to justify additional inference costs?</li>
+                                                <li>At what quality level does another generation stop improving the output enough to justify its cost?</li>
+                                            </ul>
+                                            <h3>Monetization Strategy</h3>
+                                            <p>Evaluated monetization around the value of the completed creative workflow rather than exposing users to the technical cost of every model call. Therefore, three potential approaches are:</p>
+                                            <div class="table-wrapper">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Model</th>
+                                                            <th>Potential advantage</th>
+                                                            <th>Product risk</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Freemium with usage limits</td>
+                                                            <td>Lets users experience the product before paying</td>
+                                                            <td>Free users may consume substantial generation resources</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Credit-based generation</td>
+                                                            <td>Connects usage to variable inference costs</td>
+                                                            <td>Unpredictable costs can make creation feel restrictive</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Subscription with premium capabilities</td>
+                                                            <td>Supports recurring use and more predictable revenue</td>
+                                                            <td>Retention depends on recurring creator value</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+                                                <p>The strongest initial hypothesis would be a freemium model with clear usage limits and a paid tier for higher-volume creation or advanced editing. However, repeat usage should be validated before committing to subscriptions and measure conversion alongside repeat creation, completion rate, cost per accepted comic, and contribution margin.</p>
 									</section>
 
 							</div>
