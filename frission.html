@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Frission</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/fevicon.png" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Sruthi Sivasankar</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li><a href="https://drive.google.com/file/d/1RsfsbwqDoRMkjbuLhPmK-c5i5zmQ-1Bb/view?usp=sharing">Resume</a></li>
+						<li><a href="#five" class="button primary">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Frission</h2>
+							<p>Aesthetic chills Prediction Hex App</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/hexapp.png" alt="" /></a>
+										<h3>The Project Goal</h3>
+										<h4>Making an Invisible Experience/ Phenomenon Measurable</h4>
+										<p>Frisson, or aesthetic chills, is the physical response people experience during emotionally powerful moments in music, speeches, and films.</p>
+										<p><blockquote>The question: Can patterns in what people feel, what they consume, and who they are help explain why certain content resonates?</blockquote></p>
+										<p>Frisson explores the relationship between content characteristics, emotional responses, and individual differences. The project combined publicly available community discussions with experimental data, using natural language processing, audio feature extraction, and machine learning and an interactive predictor to examine that question.</p>
+                                        <p>The goal was to move beyond describing emotional experiences toward identifying signals that could inform content discovery and personalization.</p>
+										<h3>Product Opportunity</h3>
+										<h4>Emotional Resonance behind the Engagement Metrics</h4>
+										<p>Traditional engagement metrics (Views, clicks, and watch time) capture consumption, but they do not fully explain emotional impact.</p>
+                                        <div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Potential audience</th>
+												<th>Unanswered question</th>
+												<th>Potential product value</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Content consumers</td>
+												<td>What content might resonate with me?</td>
+												<td>More relevant content discovery</td>
+											</tr>
+											<tr>
+												<td>Creators, speakers and musicians</td>
+												<td>What characteristics are associated with powerful audience responses and compliment enagagement?</td>
+												<td>Additional signals for creative experimentation</td>
+											</tr>
+											<tr>
+												<td>Content platforms</td>
+												<td>How might emotional preferences complement existing recommendation signals?</td>
+												<td>A potential personalization input</td>
+											</tr>					
+										</tbody>
+									</table>
+                                    </div>
+										<p>Product hypothesis: Combining content-level signals with individual characteristics could make an inherently subjective experience more understandable and actionable. Conceptually, this could support content discovery, creative experimentation to  explore what resonates and complement conventional engagement data.</p>
+                                        <p>Scope decision: Frisson explores whether observable patterns exist in content and self-reported experiences and can be opportunity to provide useful signals about emotional responses.</p>
+										<h3>Analysis Framework</h3>
+										<h4>Questions that Deserve Investigation for Measurable Dimensions</h4>
+										<p>Rather than treating frisson as a single outcome with one obvious explanation, the problem was decomposed into three analytical dimensions for defining useful dimensions of analysis before selecting metrics, features, or modeling techniques.</p>
+										<div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Analytical dimension</th>
+                                                        <th>Factors selected</th>
+                                                        <th>Why these factors?</th>
+                                                        <th>Product decision it could inform</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Content characteristics</td>
+                                                        <td>Media type, audio structure, emotional language, narrative themes</td>
+                                                        <td>Identify characteristics associated with reported chills</td>
+                                                        <td>Which content attributes could support discovery or classification?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Individual differences</td>
+                                                        <td>Age, gender, education, absorption, emotional responsiveness, aesthetic interests, extraversion</td>
+                                                        <td>Explore variation between individuals rather than assuming a universal response</td>
+                                                        <td>Could personalization benefit from individual-level signals?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Reported experience</td>
+                                                        <td>Chills, goosebumps, tears, shivers, intensity and reminiscence</td>
+                                                        <td>Distinguish the occurrence of an experience from its physical manifestations and reported intensity</td>
+                                                        <td>Which outcomes are meaningful enough to analyze or predict?</td>
+                                                    </tr>					
+                                                </tbody>
+                                            </table>
+                                            </div>
+										<p>This framework established separate analytical workstreams to help distinguish content characteristics from audience characteristics instead of assuming that the same content affects everyone in the same way.</p>
+								<h3>Data Strategy</h3>
+                                <h4>Combining Reported descriptions and Experimental Data</h4>
+								<p>The two sources served different analytical purposes. Community posts provided naturally occurring descriptions or Behavioral Signals of experiences and the content people associated with them. Experimental data provided a complementary basis for examining reported responses and individual characteristics.</p>
+								<p>A key limitation was that community posts are self-selected, self-reported, and inconsistent in detail. The source, quality, context, and limitations of each signal determine what product decisions it can reasonably support. The analysis therefore treated extracted patterns as signals to investigate rather than universal behavioral rules.</p>
+									<h3>Content Intelligence</h3>
+                                    <h4>Making Different Media Comparable</h4>
+									<p>To investigate content beyond broad categories, separate analytical approaches were developed, suited to different media types.</p>
+									
+									<ul>
+										<li>Music : Tempo, dynamic range, brightness, harmonic ratio factors were examined to explore whether pacing, changes in intensity, and harmonic structure are associated with reported chills</li>
+										<li>Speeches: Factors like Desire, caring, optimism and other emotion categories were examined to explore whether emotional language provides signals beyond the topic of a speech</li>
+										<li>Videos: Factors like Inspiration, human connection, hope, sacrifice and other narrative themes were examined to examine whether the meaning and progression of a story are associated with reported responses.</li>
+										<li>Community descriptions: Recurring terms for bodily sensations and experiences were examined to establish how people describe frisson in their own words</li>
+									</ul>
+                                    <p>Decision logic:  These methods transformed unstructured text and media descriptions into structured features that could be compared and explored. Importantly, the features were not interchangeable, Each medium needed an appropriate analytical lens - an acoustic measurement, an emotion label, and a thematic classification each represent a different kind of signal and carry different limitations.</p>
+                                    <p>Potential product application: These signals could be investigated as content metadata for content classification, recommendation, or creator-facing insights. It also established a basis for evaluating whether these signals are sufficiently interpretable and reliable for a product workflow.</p>
+
+                                    <h3>Audience Intelligence / Segmentation</h3>
+                                    <h4>Exploring Individual Differences</h4>
+									<p>The next analytical layer examined whether content-related patterns alone were sufficient, or reported frisson experiences could be modeled in relation to individual characteristics.</p>
+									
+									<ul>
+										<li>Absorption (MODTAS) Factor: Represents tendency to become deeply immersed in experiences and explores whether immersion relates to reported chills</li>
+										<li>Kama Muta (KAMF) Factor: Represents tendency to feel emotionally moved or touched and explore the relationship between emotional responsiveness and frisson</li>
+										<li>Aesthetic interests: Represents appreciation of art, music, and beauty to examine whether aesthetic engagement relates to reported experiences</li>
+										<li>Extraversion: Represents outgoingness, energy, and enthusiasm and checks whether broader personality differences offer additional explanatory value</li>
+									</ul>
+                                    <p>Age, gender, and education provided additional segmentation dimensions to explore the relationship between individual traits and reported experiences.</p>
+									
+									<h3>Analysis to Interactive Prediction Feature</h3>
+                                    <p>A Random Forest model was incorporated for an interactive predictor, allowing users to provide their demographics, characteristics and receive an estimate translating the analytical exploration charts into a user-facing experience. The concept creates a starting point or exploratory prototype for evaluating personalized content discovery.</p>
+										<h4>Proposed Validation Approach</h4>
+
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Validation question</th>
+														<th>Evaluation approach</th>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Does the model generalize to unseen data?</td>
+														<td>Holdout testing and cross-validation</td>
+														
+													</tr>
+													<tr>
+														<td>Does it outperform a simple baseline?</td>
+														<td>Compare against majority-class and other appropriate baseline models</td>
+														
+													</tr>
+													<tr>
+														<td>Are probability estimates meaningful?</td>
+														<td>Evaluate calibration and predictive performance</td>
+														
+													</tr>
+													<tr>
+														<td>Does performance vary across groups?</td>
+														<td>Compare appropriate metrics across demographic segments</td>
+														
+													</tr>
+													<tr>
+														<td>Is the feature useful to people?</td>
+														<td>Test comprehension, perceived relevance, and usefulness with target users</td>
+														
+													</tr>
+												</tbody>
+											</table>
+								</div>
+                                <p>Thus, the work extended beyond producing charts: it connected data preparation, feature extraction, exploratory analysis, modeling, and user interaction into a single analytical experience. Frisson demonstrates how exploratory data analysis can generate hypotheses for a potential product capability.</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Highlights</h3>
+											<div class="row">
+												<div class="col-12 col-12-xsmall">
+													<ul class="alt">
+														<li>Platform: Hex</li>
+														<li>Role: Product ideation, Product Opportunity, Analysis Framework & No-code Development</li>
+														<li>Focus: Behavioral analysis, content intelligence, user segmentation, predictive modeling</li>
+													</ul>
+												</div>
+											</div>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://devpost.com/software/patterns-on-plate" class="button">Demo</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/frissiondev.png" alt="" /></a>
+											<h3>Development Insight</h3>
+											<p>Hex's notebook, visualizations and data-app were used to connect analytical workflows & output to visual explanations and an interactive prediction interface. The project used approximately 86,596 posts from r/Frisson, cleaned using subreddit flair and posting-policy criteria, alongside the ChillDB experimental dataset. SQL-based data work, Python analysis, scikit-learn modeling was used to prepare and structurally analyze the data by cleaning, categorization, filtering, aggregation, and make information from different sources usable for specific analytical questions.</p>
+                                            <h4>Feature Engineering</h4>
+                                            <ul>
+                                                <li>Community language: TF-IDF analysis helped identify recurring terms associated with reported bodily sensations and experiences.</li>
+                                                <li>Music: Librosa-based feature extraction captured measurable audio characteristics, including tempo, dynamic range, brightness, and harmonic structure.</li>
+                                                <li>Speeches: Transformer-based text classification using GoEmotions helped characterize emotional language.</li>
+                                                <li>Videos: BART-large-mnli-based thematic classification provided a way to examine narrative themes, including inspiration, connection, hope, and sacrifice.</li>
+                                                <li>Individual characteristics and reported responses: Statistical analysis and Random Forest modeling were used to structure as retrievable data</li>
+                                            </ul>
+                                            <p>The central technical challenge was bringing heterogeneous, imperfect signals into a coherent analytical experience without treating every signal as equally reliable.</p>
+
+												
+											<footer>
+												<ul class="actions">
+													<li><a href="https://app.hex.tech/virtual-hackathon/app/Frisson-032AxbTzgNiXAZh6rOrbft/latest" class="button">Explore App</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container">
+					<header>
+						<h2>Want to work together?</h2>
+						<p>Feel free send me an Email or connect with me through my socials listed below!</p>
+					</header>
+					<form method="post" action="#" class="cta">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-12 col-12-xsmall">
+								<a href="mailto:sruthi19sivasankar@gmail.com" class="button primary fit">
+									Send an E-mail
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="mailto:sruthi19sivasankar@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/sruthi-sivasankar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/SruthiSivasankar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>						
+				<li><a href="https://www.instagram.com/sivasankarsruthi/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/people/Sruthi-Sivasankar/pfbid02rxe1ZYg4AtsmFu3Yis25TQdk9XGXJfUduMEPqVKYCAupoUL7vH7SUbbaXLgLArxVl/?mibextid=wwXIfr&rdid=YwH0n4uRofsdsWrw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18RRMewveN%2F%3Fmibextid%3DwwXIfr" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; SruthiSivasankar. All rights reserved.</li><li>Design: <a href="">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
