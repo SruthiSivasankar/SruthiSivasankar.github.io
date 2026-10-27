@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ModHub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/fevicon.png" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Sruthi Sivasankar</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li><a href="https://drive.google.com/file/d/1RsfsbwqDoRMkjbuLhPmK-c5i5zmQ-1Bb/view?usp=sharing">Resume</a></li>
+						<li><a href="#five" class="button primary">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>ModHub</h2>
+							<p>Rebuilding Reddit's Trust through In-app Moderation Infrastructure</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<a href="#" class="image fit"><img src="images/redditfigma.png" alt="" /></a>
+										<h3>The Challenge</h3>
+										<h4>When Community Governance Becomes a Retention Risk</h4>
+										<p>Reddit's value comes from its diverse communities, but the platform's decentralized moderation model creates a difficult trade-off: communities need autonomy, while users need consistent, fair, and transparent enforcement.</p>
+                                        <p>The 2023 API pricing controversy brought these tensions into focus. Changes affected third-party applications such as Apollo and RIF, which some moderators and users relied on for better moderation capabilities and user experiences. The resulting blackout exposed deeper questions about moderator power, censorship, and Reddit's dependence on external tools.</p>
+										<p><blockquote>Problem statement: Reddit's moderation unfolds layers of challenges with inefficient Moderation tools making it difficult for moderators to effectively manage large communities. And moderation structure leading to power imbalances with moderators potentially misusing their authorities. Thus, eroding user trust, reduced customer satisfaction and reliability on the platform.</blockquote></p>
+										<p>Product challenge: How might Reddit improve moderation efficiency and accountability within its own platform without undermining community autonomy?</p>
+                                        
+										<h3>Root-Cause Analysis:</h3>
+										<h4>Connecting Fragmented Problems</h4>
+										<p>The initial challenge appeared to involve several separate issues: API pricing, third-party app dependence, moderation inefficiency, and censorship concerns. The product opportunity emerged from connecting them.</p>
+                                        <div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Observed issue</th>
+												<th>Underlying concern</th>
+												<th>Product implication</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>API pricing changes and third-party app disruption</td>
+												<td>Moderators and users depend on tools outside Reddit's control</td>
+												<td>Strengthen native moderation capabilities</td>
+											</tr>
+											<tr>
+												<td>Inefficient moderation workflows</td>
+												<td>Moderators struggle to manage high content volumes</td>
+												<td>Reduce operational friction through better tooling</td>
+											</tr>
+											<tr>
+												<td>Concentrated moderator authority</td>
+												<td>Users have limited visibility or recourse when content is removed</td>
+												<td>Improve transparency, appeals, and accountability</td>
+											</tr>	
+                                            <tr>
+												<td>Concerns about bots and content authenticity</td>
+												<td>Users need confidence in the quality of community discussions</td>
+												<td>Explore better content-quality signals and review tools</td>
+											</tr>					
+										</tbody>
+									</table>
+                                    </div>
+										<p>Key strategic insight: These issues were interconnected. Improving moderation infrastructure could address both operational efficiency and the trust concerns surrounding how community decisions were made. This shifted the solution away from treating each controversy independently and toward a unified, in-platform moderation experience.</p>
+                                     
+										<h3>Research and Evidence</h3>
+										<h4>Understanding the Stakeholders</h4>
+										<p>The research is structured around three stakeholder groups because the problem affected people differently depending on their role in the community.</p>
+										<div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Persona</th>
+                                                        <th>Core pain point</th>
+                                                        <th>Product need</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Moderator</td>
+                                                        <td>High content volume and inefficient tools</td>
+                                                        <td>Faster, more coordinated moderation workflows</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Contributor</td>
+                                                        <td>Frustration with potentially biased or unexplained content removal</td>
+                                                        <td>Transparent decisions and a meaningful appeals process</td>
+                                                    <tr>
+                                                        <td>Browser / Consumer</td>
+                                                        <td>Concerns about misinformation and inauthentic, bot-generated content</td>
+                                                        <td>Greater confidence in community content</td>
+                                                    </tr>					
+                                                </tbody>
+                                            </table>
+                                            </div>
+										
+                                <h4>Quantitative Analysis</h4>
+								<p>I analyzed Reddit-related discussions across two periods:</p>
+									<ul>
+										<li>Before the API announcement: April 2022–March 2023</li>
+										<li>After the announcement: April 2023–March 2024</li>
+									</ul>
+                                    <p>The analysis covered communities including r/all, r/TheoryOfReddit, r/AskReddit, and r/RedditAlternatives. Discussion volume, posts, comments, and upvotes for User Intent to leave Reddit  were used to examine changes in attention and sentiment around the controversy.</p>
+                                    <p>The analysis reported increases of at least 4× across the tracked discussion measures after the announcement. Interpretation: The controversy coincided with a substantial increase in discussion activity, supporting the need to investigate user dissatisfaction and platform trust. These observational comparisons do not establish that API pricing alone caused the increase or that users actually churned.</p>
+                                    <h4>Qualitative interview findings</h4>
+                                    <p><a href="Response link:  https://docs.google.com/forms/d/1JjtSvCr0LbyQUtlnM7PgSfcL9KIyPejRdiBS9DKfmUg/edit#responses"> User Interview Results</a></p>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Research finding</th>
+                                                    <th>Product implication</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>86.7% opposed the API pricing decision</td>
+                                                    <td>Preserve critical workflows and reduce reliance on third-party tools</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>66.7% were dissatisfied with native features</td>
+                                                    <td>Prioritize usability and moderation functionality</td>
+                                                <tr>
+                                                    <td>40% reported being affected by moderators</td>
+                                                    <td>Investigate transparency, appeals, and accountability</td>
+                                                </tr>					
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <p>Market Analysis: Segments of audience were moderators (13%), browsers (67%), and contributors (20%), with a reported 66% Gen Z and 33% adult demographic split; mapped the opportunity to estimated Market size of $5.3B TAM, $3.91B SAM, and $850M SOM.</p>
+                                        <p>Competitive Analysis: Benchmarked Reddit against Quora, X, and Discord across user experience, anonymity, moderation tools, and content quality control, identifying inconsistent cross-community experiences, limited native moderation capabilities, and opportunities to strengthen platform trust and moderator support.</p>
+                                        <p>Together, the research pointed toward two connected opportunities: make moderation easier to perform and make moderation decisions easier to trust.</p>
+									
+									<h3>Product Strategy</h3>
+                                    <h4>From Research to a Unified Solution</h4>
+                                    <p><blockquote>Vision: To retain Reddit being a global community of diverse voices and perspectives, where people can freely share ideas, engage in open discourse, and expand their understanding of the world.</blockquote></p>
+										
+                                    <p>The strategy was to strengthen Reddit's native moderation infrastructure rather than make communities depend on third-party applications for essential workflows. Developed ModHub around four product pillars:</p>  
+
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Product pillar</th>
+														<th>Strategic rationale</th>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Moderator efficiency</td>
+														<td>Reduce friction in repetitive and high-volume tasks</td>
+														
+													</tr>
+													<tr>
+														<td>Content quality</td>
+														<td>Help moderators identify spam, policy violations, and potentially automated content</td>
+														
+													</tr>
+													<tr>
+														<td>Collaborative governance</td>
+														<td>Improve coordination among moderators and communication with Reddit</td>
+														
+													</tr>
+													<tr>
+														<td>Community accountability</td>
+														<td>Give users a clearer path to challenge potentially incorrect moderation decisions</td>
+														
+													</tr>
+												</tbody>
+											</table>
+								</div>
+                                <p>This approach addressed both sides of the trust problem. Moderator tools would improve the ability to govern communities, while appeals and feedback mechanisms would give users greater visibility and recourse.</p>
+                                <h3>Solution Design: ModHub</h3>
+                                <p>ModHub was proposed as an integrated moderation workspace within Reddit</p>
+                                <div class="table-wrapper">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Feature section</th>
+                                                <th>Proposed capabilities</th>
+                                                <th>User problem addressed</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Customizable Dashboard</td>
+                                                <td>Configurable widgets, approval and rejection shortcuts, community insights, rewards</td>
+                                                <td>Fragmented workflows and poor visibility into priority tasks</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Moderator Essentials</td>
+                                                <td>Spam and policy-violation filtering, AI-assisted bot flagging, user context, multi-subreddit moderation</td>
+                                                <td>High content volume and repetitive manual review</td>
+                                            <tr>
+                                                <td>Moderator Collaboration</td>
+                                                <td>Shared workflows across moderators and a direct channel to Reddit's team</td>
+                                                <td>Coordination challenges and limited escalation paths</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Community Satisfaction</td>
+                                                <td>Appeals for removed or flagged content, appeal tracking, community broadcasts, feedback surveys</td>
+                                                <td>Low transparency and limited user recourse</td>
+                                            </tr>						
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <p>Key product trade-off: Automation could help moderators handle volume, but automated flags should support human review rather than automatically determine every disputed case. Similarly, moderator autonomy should remain intact while decisions become more transparent and contestable.</p>
+                                    <h3>Prioritization and Success Measurement</h3>
+                                    <p>RICE and the Kano model were used to structure feature prioritization. RICE helped compare candidate features through reach, impact, confidence, and effort; Kano provided a complementary lens for distinguishing basic expectations from features that could improve the experience. The intended priority was to address essential moderation workflows and trust mechanisms before expanding into supplementary engagement features.</p>
+                                    <h4>Proposed measurement framework</h4>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Metric category</th>
+                                                    <th>Measures</th>
+                                                    <th>What they would help evaluate</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>North Star direction: Community engagement and satisfaction</td>
+                                                    <td>User satisfaction score, moderation rate, appeal success rate</td>
+                                                    <td>Whether communities remain active while moderation and recourse function effectively</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Counter-metrics</td>
+                                                    <td>Moderator satisfaction, appeal response time, user complaint rate</td>
+                                                    <td>Whether efficiency gains come at the expense of moderator workload or user trust</td>
+                                                <tr>
+                                                    <td>Supporting activity metrics</td>
+                                                    <td>Total moderation actions, appeals filed, active users</td>
+                                                    <td>How extensively the product is being used</td>
+                                                </tr>					
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <p>Measurement consideration: More moderation actions or appeals are not inherently positive outcomes. An increase in appeals could indicate better access to recourse or worsening moderation quality. The metrics would need to be interpreted together, with clear definitions and baselines, rather than optimized independently.</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Highlights</h3>
+											<div class="row">
+												<div class="col-12 col-12-xsmall">
+													<ul class="alt">
+														<li>Recognition: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7180796657679114240/">Winner (1st Place) among 50+ teams, Northeastern University - Protothon 5.0</a></li>
+														<li>Role: Team lead, Product research, Strategy, High-fidelity prototyping, Presentation</li>
+														<li>Focus: Product Strategy, Problem Discovery - Root-Cause Analysis, Solution Definition, Feature Prioritization</li>
+													</ul>
+												</div>
+											</div>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://canva.link/oaowynxntfm25ds" class="button">Product Pitch Deck</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/redditScrape.png" alt="" /></a>
+											<h3>Execution Insight</h3>
+                                            <h4>Translating Strategy into a Product Experience</h4>
+                                            <p>Led the team through research synthesis, product direction, feature definition, and presentation.  High-fidelity ModHub prototype was developed in Figma, Google Forms for survey questions, and conducting market and competitive analysis. Problem was researched using Reddit API data to compare same categories of discussion activity before and after API pricing announcement. Python-based data collection and Google Colab supported the analysis. The proposal presentation was developed using Canva for an eight-minute pitch.</p>
+                                            <p>The roadmap organized the proposed work into quarterly phases spanning PRDs & Market Analysis, Beta Test &Feedback Iteration, Roll-out planning & Launch Campaigns, Survey Analysis & post-launch monitoring, UX Research, Design & Prototyping, Development, Testing & Deployment of product.</p>
+                                            <p>The strongest merit was connecting fragmented platform issues to a common product problem. By identifying moderation infrastructure as a shared point of intervention, ModHub turned a broad retention and trust challenge into a structured product proposal with defined user needs, feature pillars, prioritization methods, and success measures.</p>
+
+												
+											<footer>
+												<ul class="actions">
+													<li><a href="https://www.figma.com/proto/fk9BhyC1NcnaqeY1THAmUh/Protothon?type=design&node-id=1-2&t=REcDRMDLpj16VgCL-1&scaling=min-zoom&page-id=0%3A1&mode=design" class="button">Prototype</a></li>
+                                                    <li><a href="https://colab.research.google.com/drive/1XgO3z0_ELUpst87gRHqvcfr4y5P2d4Ak?usp=sharing" class="button">Code</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Five -->
+			<section id="five" class="wrapper style2 special fade">
+				<div class="container">
+					<header>
+						<h2>Want to work together?</h2>
+						<p>Feel free send me an Email or connect with me through my socials listed below!</p>
+					</header>
+					<form method="post" action="#" class="cta">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-12 col-12-xsmall">
+								<a href="mailto:sruthi19sivasankar@gmail.com" class="button primary fit">
+									Send an E-mail
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+				<li><a href="mailto:sruthi19sivasankar@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/in/sruthi-sivasankar/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/SruthiSivasankar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>						
+				<li><a href="https://www.instagram.com/sivasankarsruthi/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="https://www.facebook.com/people/Sruthi-Sivasankar/pfbid02rxe1ZYg4AtsmFu3Yis25TQdk9XGXJfUduMEPqVKYCAupoUL7vH7SUbbaXLgLArxVl/?mibextid=wwXIfr&rdid=YwH0n4uRofsdsWrw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18RRMewveN%2F%3Fmibextid%3DwwXIfr" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; SruthiSivasankar. All rights reserved.</li><li>Design: <a href="">HTML5 UP</a></li>
+			</ul>
+		</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
